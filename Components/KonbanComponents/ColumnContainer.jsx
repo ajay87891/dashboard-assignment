@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React  from "react";
 import addbtn from "../../public/icons/btnAdd.png";
 import TaskContainer from "./TaskContainer";
 import NullContainer from "./NullContainer";

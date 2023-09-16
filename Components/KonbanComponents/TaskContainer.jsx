@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import ich from "../../public/icons/ich.png";
+import ich from "../../public/icons/icH.png";
 import clock from "../../public/icons/clock.png";
 import ProgressBar from "@ramonak/react-progress-bar";
-import {Draggable} from './Draggable'
+
 
 const TaskContainer = (props) => {
   return (

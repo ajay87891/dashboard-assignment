@@ -10,8 +10,19 @@ import vl from "../../public/icons/vl.png";
 
 export default function MobileNav() {
   return (
-    <div className="  w-full max-w-[100vw] ">
-      <Popover className="relative">
+    <div className="  w-[100vw] max-w-[100vw] flex justify-between items-center">
+      <h2 className='mg:hidden text-white px-10'>
+                    weframetech
+                    </h2>
+                    <div className='flex px-10 space-x-2'>
+      <img src='' alt='' className='w-10 h-10'/>
+      <div>
+      <div>
+        <h3 className='text-white '>Instructor Day</h3>
+        <p className=' text-blue-600 text-sm'>Super Admin</p>
+      </div>
+    </div>
+      <Popover className="">
         {({ open }) => (
           <>
             <Popover.Button
@@ -19,7 +30,7 @@ export default function MobileNav() {
                 ${open ? "" : "text-opacity-90"}
                 group inline-flex items-center rounded-md bg-bg px-3 py-2 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
             >
-              <span>Solutions</span>
+              <span>More</span>
               <ChevronDownIcon
                 className={`${open ? "" : "text-opacity-70"}
                   ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80`}
@@ -37,7 +48,7 @@ export default function MobileNav() {
             >
               <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-sm -translate-x-1/2 transform px-4 sm:px-0 lg:max-w-3xl">
                 <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                  <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-2">
+                  <div className="relative grid gap-8 bg-bg border-background p-7 lg:grid-cols-2">
                     <ul className=" font-medium flex flex-col p-4 md:p-0 mt-4">
                       <li className="text-priamry"> Other Menus </li>
                     </ul>
@@ -61,13 +72,14 @@ export default function MobileNav() {
                     </ul>
                     <LanguageDropDown />
                   </div>
-                  <div className="bg-gray-50 p-4"></div>
+                 
                 </div>
               </Popover.Panel>
             </Transition>
           </>
         )}
       </Popover>
+      </div>
     </div>
   );
 }

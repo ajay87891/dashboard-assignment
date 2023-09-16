@@ -7,6 +7,8 @@ import office from './../public/icons/office.png'
 import checkbox from './../public/icons/checkbox.png'
 import vl from './../public/icons/vl.png'
 import MobileNav from './NavbarSubcomponents/mobilenav'
+import pf from './../public/icons/profilePicture.png'
+
 
 export default function Navbar() {
   return (
@@ -24,23 +26,33 @@ export default function Navbar() {
         </svg>
         <span className="sr-only">Search icon</span>
       </div>
-      <input type="text" id="search-navbar" className="block w-[20vw] p-4 pl-20 text-sm bg-secondary rounded-3xl" placeholder="Search Here"/>
+      <input type="text" id="search-navbar" className="block md:w-[10vw] lg:w-[20vw] p-4 pl-20 text-sm bg-secondary rounded-3xl" placeholder="Search Here"/>
     </div>
     <ul className=' font-medium flex flex-col px-4 mt-4'>
       <li className='text-priamry'> Other Menus  </li>
     </ul>
-    <ul className='flex  p-4 space-x-2 '>
-      <li > <img src={bell.src} alt="" className='w-5'/> </li>
-      < li> <img src={vl.src} alt="" className='w-5' /> </ li>
-      <li > <img src={checkbox.src} alt="" className='w-5'/> </li>
-      <li > <img src={office.src} alt=""  className='w-5' /> </li>
+    <ul className='flex  p-4 space-x-6 flex-wrap'>
+      <li > <div className='relative'> <img src={bell.src} alt="" className='w-5'/> 
+      <span class="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
+      </li>
+      <li > <div className='relative'> <img src={vl.src} alt="" className='w-5'/> 
+      <span class="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
+      </li>
+      <li > <div className='relative'> <img src={checkbox.src} alt="" className='w-5'/> 
+      <span class="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
+      </li>
+      <li > <div className='relative'> <img src={office.src} alt="" className='w-5'/> 
+      <span class="absolute bg-[#E328AF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">!</span></div>
+      </li>
+     
+     
     </ul>
     <LanguageDropDown/>
-    <div className='flex px-10 space-x-2'>
-      <img src='' alt='' className='w-10 h-10'/>
+    <div className='flex px-1 lg:px-10 space-x-2'>
+      <img src={pf.src} alt='' className='w-6 h-6 lg:w-10 lg:h-10 '/>
       <div>
-        <h3 className='text-white '>Instructor Day</h3>
-        <p className=' text-blue-600 text-sm'>Super Admin</p>
+        <h3 className='text-white text-sm  lg:text-base'>Instructor Day</h3>
+        <p className=' text-blue-600 text-xs lg:text-sm'>Super Admin</p>
       </div>
     </div>
     </div>

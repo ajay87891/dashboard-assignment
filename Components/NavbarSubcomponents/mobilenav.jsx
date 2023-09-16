@@ -10,16 +10,16 @@ import vl from "../../public/icons/vl.png";
 
 export default function MobileNav() {
   return (
-    <div className="  w-[100vw] max-w-[100vw] flex justify-between items-center">
-      <h2 className='mg:hidden text-white px-10'>
+    <div className=" min-w-[100vw] flex justify-between items-center">
+      <h2 className='md:hidden text-white pl-6 '>
                     weframetech
                     </h2>
-                    <div className='flex px-10 space-x-2'>
+                    <div className='flex px-1 space-x-2'>
       <img src='' alt='' className='w-10 h-10'/>
       <div>
       <div>
-        <h3 className='text-white '>Instructor Day</h3>
-        <p className=' text-blue-600 text-sm'>Super Admin</p>
+        <h3 className='text-white text-xs sm:text-sm '>Instructor Day</h3>
+        <p className=' text-blue-600 text-[9px] sm:text-xs'>Super Admin</p>
       </div>
     </div>
       <Popover className="">
@@ -30,7 +30,7 @@ export default function MobileNav() {
                 ${open ? "" : "text-opacity-90"}
                 group inline-flex items-center rounded-md bg-bg px-3 py-2 text-base font-medium text-white hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
             >
-              <span>More</span>
+              <span className="text-sm">More</span>
               <ChevronDownIcon
                 className={`${open ? "" : "text-opacity-70"}
                   ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80`}

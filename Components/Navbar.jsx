@@ -33,16 +33,16 @@ export default function Navbar() {
     </ul>
     <ul className='flex  p-4 space-x-6 flex-wrap'>
       <li > <div className='relative'> <img src={bell.src} alt="" className='w-5'/> 
-      <span class="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
+      <span className="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
       </li>
       <li > <div className='relative'> <img src={vl.src} alt="" className='w-5'/> 
-      <span class="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
+      <span className="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
       </li>
       <li > <div className='relative'> <img src={checkbox.src} alt="" className='w-5'/> 
-      <span class="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
+      <span className="absolute bg-[#5ECFFF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">12</span></div>
       </li>
       <li > <div className='relative'> <img src={office.src} alt="" className='w-5'/> 
-      <span class="absolute bg-[#E328AF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">!</span></div>
+      <span className="absolute bg-[#E328AF] text-black font-bold px-2 py-1 text-[0.5rem]  rounded-full -top-4 -right-3">!</span></div>
       </li>
      
      

@@ -2,8 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import Statuscard from './KonbanComponents/Statuscard'
 import ColumnContainer from './KonbanComponents/ColumnContainer'
-import { DndContext } from '@dnd-kit/core'
-import { SortableContext } from '@dnd-kit/sortable'
+import {DndContext} from '@dnd-kit/core'
+
 
 const todo=[
     {
@@ -80,7 +80,7 @@ const Kanban = () => {
     <div className='bg-background min-h-[100vh] min-w-full pt-10'>
 
         <Statuscard/>
-        <DndContext>
+        <DndContext onDragEnd={handleDragEnd}>
         <div className=" ml-4 md:ml-72 flex space-x-4 flex-wrap">
         <ColumnContainer title="To-Do List" number={23} data={todo} />
         <ColumnContainer title="In Progress" number={2} data={doing} />
@@ -95,5 +95,13 @@ const Kanban = () => {
     </div>
   )
 }
+function handleDragEnd(event) {
+    const {active, over} = event;
+
+    if (over && active.data.current.supports.includes(over.data.current.type)) {
+      // do stuff
+    }
+  }
+
 
 export default Kanban

@@ -41,26 +41,26 @@ const Statuscard = () => {
             <img src={user.src} alt="" className="w-24" />
             <button
               type="button"
-              class="text-white bg-priamry hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2  focus:outline flex  space-x-1"
+              className="text-white bg-priamry hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2  focus:outline flex  space-x-1"
             >
               <img src={invite.src} className="w-4" alt="" />
               Invite People
             </button>
             
-            <button class="relative inline-flex items-center justify-center bg-transparen p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br  border-2 border-[#7879F1] hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 ">
-              <span class="relative px-2.5 py-1.5 transition-all ease-in duration-75  text-white rounded-md group-hover:bg-opacity-0">
+            <button className="relative inline-flex items-center justify-center bg-transparen p-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br  border-2 border-[#7879F1] hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+              <span className="relative px-2.5 py-1.5 transition-all ease-in duration-75  text-white rounded-md group-hover:bg-opacity-0">
                 Private
               </span>
               
             </button>
             <button
               type="button"
-              class="text-white bg-[#7879F1] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2  focus:outline"
+              className="text-white bg-[#7879F1] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-2xl text-sm px-3 py-2  focus:outline"
             >
               Edit
             </button>
-            <button class="relative inline-flex items-center justify-center  bg-transparen px-1  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br  border-2 border-[#7879F1] hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 ">
-              <img src={chat.src} alt="" className="w-4"/><span class="relative px-2.5 py-1.5  transition-all ease-in duration-75  text-white rounded-md group-hover:bg-opacity-0">
+            <button className="relative inline-flex items-center justify-center  bg-transparen px-1  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br  border-2 border-[#7879F1] hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 ">
+              <img src={chat.src} alt="" className="w-4"/><span className="relative px-2.5 py-1.5  transition-all ease-in duration-75  text-white rounded-md group-hover:bg-opacity-0">
               45 Comments
               </span>
             </button>

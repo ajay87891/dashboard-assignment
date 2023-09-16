@@ -3,10 +3,12 @@ import React from "react";
 import ich from "../../public/icons/ich.png";
 import clock from "../../public/icons/clock.png";
 import ProgressBar from "@ramonak/react-progress-bar";
+import {Draggable} from './Draggable'
 
 const TaskContainer = (props) => {
   return (
     <div className="min-h-[200px] bg-secondary rounded-lg flex flex-col">
+      
       <div className="flex justify-between pt-2">
         <div className="flex px-2 items-center justify-center space-x-2">
           <span

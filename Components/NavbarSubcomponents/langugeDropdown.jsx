@@ -6,14 +6,14 @@ import { icons } from '@/public/icons'
 
 export default function LanguageDropDown() {
   return (
-    <div className=" w-56 text-right">
-      <Menu as="div" className="relative inline-block text-left">
+    <div className=" xl:w-52 w-36 text-right">
+      <Menu as="div" className="relative inline-block text-center my-auto">
         <div>
-          <Menu.Button className="inline-flex w-full justify-center rounded-full bg-secondary  px-6 py-4 text-sm font-medium text-white ">
-            <img src={icons.us.src} className='w-5'/>
-            <p className='pl-1'>ENGLISH</p>
+          <Menu.Button className="inline-flex w-full items-center justify-center rounded-full bg-secondary lg:px-3 py-2  xl:px-6 xl:py-4 text-sm font-medium text-white ">
+            <img src={icons.us.src} className='xl:w-5 lg:w-4'/>
+            <p className='pl-1 text-xs xl:text-base'>ENGLISH</p>
             <ChevronDownIcon
-              className="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
+              className="ml-2 -mr-1 h-5 w-5 text-violet-700 hover:text-violet-100"
               aria-hidden="true"
             />
           </Menu.Button>

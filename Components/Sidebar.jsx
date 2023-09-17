@@ -25,8 +25,8 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Sidebar() {
-  const [sidebarOpen, setSidebarOpen] = useState(false)
+export default function Sidebar({sidebarOpen,setSidebarOpen}) {
+  // const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
     <>
@@ -124,7 +124,7 @@ export default function Sidebar() {
         </Transition.Root>
 
         {/* sidebar for desktop */}
-        <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0 ">
+        <div className="hidden lg:flex md:w-52 lg:flex-col lg:fixed lg:inset-y-0 ">
          
           <div className="flex-1 flex flex-col min-h-0 bg-bg">
             <div className="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto no-scrollbar">
@@ -180,14 +180,14 @@ export default function Sidebar() {
         </div>
         <div className=" flex flex-col flex-1">
           <div className="fixed top-[14px] z-10 md:hidden pl-1 pt-1 sm:pl-3 sm:pt-3">
-            <button
+            {/* <button
               type="button"
               className="-ml-0.5 -mt-0.5 h-12 w-12 inline-flex items-center justify-center rounded-md text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset "
               onClick={() => setSidebarOpen(true)}
             >
               <span className="sr-only">Open sidebar</span>
               <MenuIcon className="h-6 w-6" aria-hidden="true" />
-            </button>
+            </button> */}
           </div>
          
         </div>

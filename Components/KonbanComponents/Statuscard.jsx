@@ -13,7 +13,7 @@ const Statuscard = () => {
 
 
   return (
-    <div className="md:ml-72 mx-2 md:mr-10 bg-bg pt-2 flex border-0 rounded-lg pb-10">
+    <div className="lg:ml-60 mx-2 lg:mr-10 bg-bg pt-2 flex border-0 rounded-lg pb-10">
       <div className="flex flex-col w-full px-1 md:px-7">
         <div className="flex  justify-between w-full">
           <div className="flex items-center justify-center space-x-2">
@@ -25,7 +25,7 @@ const Statuscard = () => {
               </p>
             </div>
           </div>
-          <div className="flex space-x-1">
+          <div className="hidden lg:flex space-x-1">
             <div className="flex flex-col pt-4">
               <h3 className="text-white text-sm lg:text-lg">Centered Martial Arts</h3>
               <p className="text-[#A5A5A5] text-xs lg:text-base"> Sunnyvale, Ca</p>
@@ -66,9 +66,9 @@ const Statuscard = () => {
             </button>
           </div>
 
-          <div className="flex space-x-2 flex-wrap flex-col md:flex-row  text-white">
-            <h3>Total Progress</h3>
-            <div className=" w-40 md:w-52 lg:w-72"><ProgressBar completed={60} /></div>
+          <div className="flex space-x-2 flex-wrap md:flex-row  text-white">
+            <h3>Total Progress 60%</h3>
+            <div className=" w-40 md:w-52 lg:w-72"><ProgressBar completed={60} isLabelVisible={false} /></div>
 
 
           </div>

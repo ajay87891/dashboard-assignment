@@ -7,7 +7,8 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 const TaskContainer = (props) => {
   return (
-    <div className="min-h-[200px] bg-secondary rounded-lg flex flex-col">
+    <div className="min-h-[200px] max-w-[272px] bg-[#07051A] rounded-lg relative ">
+      <div className={`min-h-[200px] flex flex-col space-y-3 bg-secondary rounded-lg w-full h-full shadow-black shadow-lg ${props.rotate?"rotate-12 absolute top-4 left-8 ":" "} `}>
       
       <div className="flex justify-between pt-2">
         <div className="flex px-2 items-center justify-center space-x-2">
@@ -17,7 +18,7 @@ const TaskContainer = (props) => {
           >
             {" "}
           </span>
-          <p className="text-sm font-sans" style={{ color: `${props.colour}` }}>
+          <p className="text-xs font-sans" style={{ color: `${props.colour}` }}>
             {props.heading}
           </p>
         </div>
@@ -27,7 +28,7 @@ const TaskContainer = (props) => {
           <img src={ich.src} className="w-8 px-2" alt="" />
         </button>
       </div>
-      <div className="text-white md:text-base lg:text-lg px-3">
+      <div className="text-white text-sm md:text-bas lg:text-base xl:text-lg px-3">
         {props.title}
       </div>
       <div className="px-3">
@@ -55,6 +56,7 @@ const TaskContainer = (props) => {
             <span className="text-xs text-gray-400 pl-1"> Due in {props.time} days</span>
 
         </div>
+      </div>
       </div>
     </div>
   );

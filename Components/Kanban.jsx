@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Statuscard from './KonbanComponents/Statuscard'
 import ColumnContainer from './KonbanComponents/ColumnContainer'
-import {DndContext} from '@dnd-kit/core'
+// import {DndContext} from '@dnd-kit/core'
 
 
 const todo=[
@@ -26,11 +26,11 @@ const todo=[
       },
       {
         id: "1",
-        heading:"",
+        heading:"BUGS FIXING",
         time:6,
         progress:80,
-        title: "List admin APIs for dashboard",
-        color:"black",
+        title: "Payment gateway needs reauthorization.",
+        color:"Yellow",
         users:[1,2]
       },
 ]
@@ -43,16 +43,18 @@ const doing=[
         progress:70,
         title: "Create sign up sheet for holiday student/parent conferences.",
         color:"yellow",
-        users:[1,2,3,4]
+        users:[1,2,3,4],
+        rotate:false
       },
       {
         id: "1",
-        heading:"",
+        heading:"BUG FIXING",
         time:4,
         progress:30,
-        title: "List admin APIs for dashboard",
-        color:"white",
-        users:[1,2,3]
+        title: "Payment gateway needs reauthorization.",
+        color:"Yellow",
+        users:[1,2,3],
+        rotate:true
       },
     ]
       
@@ -77,31 +79,26 @@ const Kanban = () => {
    
     
   return (
-    <div className='bg-background min-h-[100vh] min-w-full pt-10'>
+    <div className='bg-background min-h-[100vh]  pt-5'>
 
         <Statuscard/>
-        <DndContext onDragEnd={handleDragEnd}>
-        <div className=" ml-4 md:ml-72 flex space-x-4 flex-wrap">
+       
+        <div className=" ml-4 lg:ml-64 overflow-scroll  ">
+          <div className='grid grid-cols-5  min-w-[1500px]'>
         <ColumnContainer title="To-Do List" number={23} data={todo} />
         <ColumnContainer title="In Progress" number={2} data={doing} />
         <ColumnContainer title="Done" number={3} data={done}/>
         <ColumnContainer title="Revised" number={0} data={revised} />
         <ColumnContainer title="Completed Project" number={3} data={todo} />
+        </div>
         
-        </div></DndContext>
+        </div>
         
 
       
     </div>
   )
 }
-function handleDragEnd(event) {
-    const {active, over} = event;
-
-    if (over && active.data.current.supports.includes(over.data.current.type)) {
-      // do stuff
-    }
-  }
 
 
 export default Kanban

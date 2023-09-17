@@ -10,7 +10,7 @@ const ColumnContainer = ({ data, title, number }) => {
 //     setData(data);
 //   }, []);
   return (
-    <div className=" min-h-[50vh] bg-background w-64 mt-5 rounded-lg ">
+    <div className=" min-h-[50vh] min-w-fit bg-background w-64 mt-5 rounded-lg ">
       <div className="flex justify-between w-full">
         <h2 className="text-white">{`${title} (${number})`}</h2>
         <button>
@@ -31,6 +31,7 @@ const ColumnContainer = ({ data, title, number }) => {
                 colour={item.color}
                 progress={item.progress}
                 users={item.users}
+                rotate={item.rotate?true:false}
               />
             </div>
           );

@@ -20,7 +20,7 @@ export default function Navbar({setSidebarOpen}) {
     <>
     
 <nav className="bg-bg ">
-  <div className="max-w-[100vw] flex flex-wrap  mx-auto px-4 py-1.5">
+  <div className="max-w-[100vw] flex flex-wrap  mx-auto px-4 py-4 lg:py-1.5">
   <div className=' w-full'>
     <div className="flex lg:justify-end justify-between items-center w-full">
       <div className='lg:hidden flex items-center justify-center '>
@@ -69,11 +69,11 @@ export default function Navbar({setSidebarOpen}) {
     <LanguageDropDown/>
     </div>
 
-    <div className='flex px-1 lg:px-2 xl:px-10 2xl:px-16 space-x-2 border-l-[1px] mx-2'>
-      <img src={pf.src} alt='' className='w-6 h-6 xl:w-10 xl:h-10 '/>
+    <div className='flex px-1 lg:px-2 xl:px-10 2xl:px-16 space-x-2 border-l-[0.5px] border-secondary items-center justify-center mx-2'>
+      <img src={pf.src} alt='' className='w-8 h-8 xl:w-10 xl:h-10 '/>
       <div>
-        <h3 className='text-white xl:text-lg  lg:text-[9px]'>Instructor Day</h3>
-        <p className=' text-blue-600 xl:text-sm lg:text-[9px]'>Super Admin</p>
+        <h3 className='text-white text-xs xl:text-lg  lg:text-[9px]'>Instructor Day</h3>
+        <p className=' text-blue-600 text-xs xl:text-sm lg:text-[9px]'>Super Admin</p>
 
       </div>
       <div className=' flex items-center justify-center'>

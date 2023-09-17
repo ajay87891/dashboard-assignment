@@ -1,6 +1,7 @@
 "use client";
 import React  from "react";
 import addbtn from "../../public/icons/btnAdd.png";
+import addbtnin from "../../public/icons/btnAddin.png";
 import TaskContainer from "./TaskContainer";
 import NullContainer from "./NullContainer";
 
@@ -14,7 +15,7 @@ const ColumnContainer = ({ data, title, number }) => {
       <div className="flex justify-between w-full">
         <h2 className="text-white">{`${title} (${number})`}</h2>
         <button>
-          <img src={addbtn.src} alt="" className="w-10" />
+          <img src={`${(title=="To-Do List")?addbtn.src:addbtnin.src}`} alt="" className="w-8" />
         </button>
       </div>
       <div className="w-full flex-col space-y-2">
@@ -23,7 +24,7 @@ const ColumnContainer = ({ data, title, number }) => {
         }
         {data?.map((item, index) => {
           return (
-            <div key={index} className="">
+            <div key={index} className=" mt-2">
               <TaskContainer
                 title={item.title}
                 heading={item.heading}
